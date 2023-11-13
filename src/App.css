@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "leaflet/dist/leaflet.css";
+
+.description-section {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.title {
+  font-size: 28px;
+  color: #006699;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #004466;
+  margin-bottom: 12px;
+}
+
+.stage-title {
+  font-size: 18px;
+  color: #003344;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: transparent;
+  border-top-color: #3498db; 
+  animation: spin 1s linear infinite;
+}
+
+.mobile-trail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  padding: 16px;
+}
+
+.trail-list-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  padding: 12px;
+}
+
+.item-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-content {
+  padding: 12px;
+}
