@@ -23,8 +23,8 @@ function Home() {
   };
 
   const handleResultSelect = (trailId) => {
-    setShowDropdown(false); 
-    navigate(`/trails/${trailId}`); 
+    setShowDropdown(false);
+    navigate(`/trails/${trailId}`);
   };
 
   const navigateToSearchResultsPage = () => {
@@ -41,15 +41,12 @@ function Home() {
     });
   }, []);
   const limitedTrailData = trailData.slice(0, 3);
+  const url = "https://ledstatus.se/images/jamtland2.jpeg";
 
   return (
     <div className="min-h-screen bg-[#f3f3f3]">
       <div className="relative overflow-hidden">
-        <img
-          className="object-cover h-[50vh] w-full"
-          src={hero}
-          alt="hiker in the mountains"
-        />
+        <img className="object-cover h-[50vh] w-full" src={url} alt="Hero" />
         <div
           className="absolute top-0 left-0 w-full h-full bg-black opacity-50"
           style={{ zIndex: 1 }}

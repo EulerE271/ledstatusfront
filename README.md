@@ -30,7 +30,7 @@ Explore, share, and discover the best trails with the Sarek application, a React
 
 1. Clone the repository:
    ```
-    git clone https://github.com/[your-username]/sarek-frontend.git
+    git clone https://github.com/EulerE271/sarek-frontend.git
    ```
 2. Navigate into the project directory:
    ```
